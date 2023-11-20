@@ -1,31 +1,34 @@
-import React from "react";
 import "./Category.css";
+import Input from "../../components/Input";
 
-const Category = () => {
+const Category = ({ handleChange }) => {
   return (
     <div>
       <h2 className="sidebar-title">Category</h2>
 
       <div>
         <label className="sidebar-label-container">
-          <input type="radio" value="" name="test" />
+          <input onChange={handleChange} type="radio" value="" name="test" />
           <span className="checkmark"></span>Все
         </label>
-
-        <label className="sidebar-label-container">
-          <input type="radio" value="" name="test" />
-          <span className="checkmark"></span>Ручной инструмент
-        </label>
-
-        <label className="sidebar-label-container">
-          <input type="radio" value="" name="test" />
-          <span className="checkmark"></span>Наполный инструмент
-        </label>
-
-        <label className="sidebar-label-container">
-          <input type="radio" value="" name="test" />
-          <span className="checkmark"></span>Средста подмашивания
-        </label>
+        <Input
+          handleChange={handleChange}
+          value="ручной инструмент"
+          title="Ручной инструмент"
+          name="test"
+        />
+        <Input
+          handleChange={handleChange}
+          value="наполный инструмент"
+          title="Наполный инструмент"
+          name="test"
+        />
+        <Input
+          handleChange={handleChange}
+          value="средства подмашивания"
+          title="Средства подмашивания"
+          name="test"
+        />
       </div>
     </div>
   );

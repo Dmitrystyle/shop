@@ -1,23 +1,20 @@
-import React from "react";
 import { MdShoppingCart } from "react-icons/md";
 
-const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
+const Card = ({ img, title, newPrice }) => {
   return (
     <>
       <section className="card">
-        <img
-          className="card-img"
-          src="https://cdn1.ozone.ru/s3/multimedia-i/6560753334.jpg"
-          alt="<Бетономешалка"
-        />
-        <div className="card-details" />
-        <h3 className="card-title">Бетономешалка</h3>
-        <section className="card-price">
-          <div className="price"> 1400р/сутки.</div>
-          <div>
-            <MdShoppingCart />
-          </div>
-        </section>
+        <img src={img} alt={title} className="card-img" />
+        <div className="card-details">
+          <h3 className="card-title">{title}</h3>
+
+          <section className="card-price">
+            <div className="price">{newPrice}</div>
+            <div className="bag">
+              <MdShoppingCart className="bag-icon" />
+            </div>
+          </section>
+        </div>
       </section>
     </>
   );

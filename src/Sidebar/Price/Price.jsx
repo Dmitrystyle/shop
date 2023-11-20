@@ -1,31 +1,37 @@
-import React from "react";
 import "./Price.css";
+import Input from "../../components/Input";
 
-const Price = () => {
+const Price = (handleChange = { handleChange }) => {
   return (
     <>
       <div className="ml">
         <h2 className="sidebar-title price-title">Price</h2>
 
         <label className="sidebar-label-container">
-          <input type="radio" value="" name="test2" />
-          <span className="checkmark"></span>All
+          <input onChange={handleChange} type="radio" value="" name="test2" />
+          <span className="checkmark"></span>Все
         </label>
 
-        <label className="sidebar-label-container">
-          <input type="radio" value="" name="test2" />
-          <span className="checkmark"></span>500-1500р.
-        </label>
+        <Input
+          handleChange={handleChange}
+          value={1000}
+          title="0 - 1000"
+          name="test2"
+        />
 
-        <label className="sidebar-label-container">
-          <input type="radio" value="" name="test2" />
-          <span className="checkmark"></span>1500-5000р.
-        </label>
+        <Input
+          handleChange={handleChange}
+          value={100}
+          title="1000 - 5000"
+          name="test2"
+        />
 
-        <label className="sidebar-label-container">
-          <input type="radio" value="" name="test2" />
-          <span className="checkmark"></span>5000-15000р.
-        </label>
+        <Input
+          handleChange={handleChange}
+          value={15000}
+          title="5000 - 15000"
+          name="test2"
+        />
       </div>
     </>
   );

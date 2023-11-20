@@ -14,8 +14,13 @@
 }
 
 .card-img {
-  width: 13rem;
-  margin-bottom: 1rem;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  margin-bottom: 25px;
+  float: left;
+  height: 200px;
 }
 
 .card-title {
