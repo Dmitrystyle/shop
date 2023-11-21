@@ -9,7 +9,7 @@ const Card = ({ img, title, newPrice }) => {
           <h3 className="card-title">{title}</h3>
 
           <section className="card-price">
-            <div className="price">{newPrice}</div>
+            <div className="price">{newPrice}р/сутки</div>
             <div className="bag">
               <MdShoppingCart className="bag-icon" />
             </div>
