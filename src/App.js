@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Navigation from "./Navigation/Nav";
+import Navigation from "./Navigation/Nav.jsx";
 import Prodacts from "./Products/Prodacts.jsx";
 import Recomended from "./Recomended/Recomended.jsx";
 import Sidebar from "./Sidebar/Sidebar.jsx";

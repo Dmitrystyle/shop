@@ -19,8 +19,8 @@ const Category = ({ handleChange }) => {
         />
         <Input
           handleChange={handleChange}
-          value="наполный инструмент"
-          title="Наполный инструмент"
+          value="напольный инструмент"
+          title="Напольный инструмент"
           name="test"
         />
         <Input

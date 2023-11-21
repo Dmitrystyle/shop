@@ -1,7 +1,7 @@
 import "./Price.css";
 import Input from "../../components/Input";
 
-const Price = (handleChange = { handleChange }) => {
+const Price = ({ handleChange }) => {
   return (
     <>
       <div className="ml">
@@ -15,21 +15,21 @@ const Price = (handleChange = { handleChange }) => {
         <Input
           handleChange={handleChange}
           value={1000}
-          title="0 - 1000"
+          title="0р. - 1000р."
           name="test2"
         />
 
         <Input
           handleChange={handleChange}
-          value={100}
-          title="1000 - 5000"
+          value={2000}
+          title="1000р. - 2000р."
           name="test2"
         />
 
         <Input
           handleChange={handleChange}
-          value={15000}
-          title="5000 - 15000"
+          value={3000}
+          title="2000р. - 3000р."
           name="test2"
         />
       </div>
